@@ -1,0 +1,671 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navlink  {
+    display: flex;
+    display: inline-block;
+    background-color: rgb(0 0 0 / 1);
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+
+}
+
+.navlink  ul {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.navlink  ul li {
+    position: relative;
+    flex-direction: row;
+    font-family: 'Mali', cursive;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    
+}
+
+.navlink  ul li:not(:first-child) {
+
+    margin-top: 20px;
+    margin-left: 98px;
+}
+
+.navlink ul li:nth-child(2) {
+    margin-left: 50px;
+}
+
+/* Drop-down menu */
+.dropdown {
+    display: none;
+}
+
+a::after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid #ffc107;
+    width: 0;
+    left: 0;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    transition-delay: 0s;
+    
+  }
+  
+a:hover:after { 
+    margin-left: -50px;
+    width: 100%; 
+    border-bottom: 5px solid #ffc107;
+  }
+
+.navlink ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+}
+.dropdown ul{
+   
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li {
+    width: 300px;
+    padding: 10px;
+    margin-left: -60px;
+    text-decoration: none;
+}
+.dropdown ul a {
+    text-decoration: none;
+}
+
+.first {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+
+}
+
+.first h1 {
+    position: relative;
+    font-size: 120px;
+    font-weight: 750;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.first h1::after {
+    content: '';
+    border-top: 6px solid #fc0;
+    width: 75%;
+    position: absolute;
+    display: block;
+    left: -80%;
+    margin-top: -7%;
+   
+}
+
+/* Section two Designing */
+
+.two {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.heading-two {
+    padding: 0.5rem; 
+}
+
+.box1 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-bottom: 11px;
+    padding: 20px;
+    color: white;
+}
+
+.two .box1 .heading-two{
+    
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    background-image: linear-gradient(120deg, #333 0%, #fc0 100%);
+    background-repeat: no-repeat;
+    background-size: 6em 0.5em;
+    background-position: 0 80%;
+}
+.btn {
+    color: #FFFFFF;
+    background: #ffc107;
+    height: 50px;
+    width: 200px; 
+    font-size: large;
+    font-weight: 600;
+    border-radius: 4px;
+    font-family: "Josefin Sans", "Helvetica Neue";
+}
+.btn:hover { 
+    color: #060606;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    font-weight: 600;
+    background-color: 3px solid yellow;
+    border-radius: 6px;
+}
+
+.box1 h4 {
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.box1 p {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box2 {
+    
+        /* margin-top: 10px; */
+    z-index: 2;
+}
+.box2 ul {
+    margin-left: 60px;
+    border: 5px solid yellow;
+    color: #FFFFFF;
+    width: 500px;
+    /* height: 500px; */
+    font-family: "Josefin Sans", Sans-serif;
+    font-weight: 500;
+    line-height: 3em;
+    padding: 20% 0% 10% 2%;
+    font-size: 24px;
+}
+.box2 ul li {
+    list-style-type: none;
+}
+.box2 ul li i {
+    color: #ffc107;
+}
+ /* ////////////////////////////////////////////////////////// */
+ /* Section-3 */
+
+.three {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        position: relative;
+}
+ .three .row {
+    display: flex;
+    flex-direction: row;
+
+    
+ }
+
+.box3 img {
+    margin-left: 100px;
+    margin-top: 50px;
+    vertical-align: middle;
+    margin-right: 150px;
+
+}
+.box4 {
+    width:700px ;
+    margin-right: 100px;
+    /* float: right; */
+}
+
+ .box4 h2 {
+    font-size: 3.5em;
+    background-image: linear-gradient(120deg, #333 0%, #fc0 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 80%;
+    transition: background-size 0.25s ease-in;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    
+    font-weight: 800;
+ }
+ .box4 h3 {
+    color: #FFFFFF;
+    font-family: "josefin Sans", Sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+ }
+ .box4 h2:hover {
+    background-size: 100% 7%;
+ }
+ .box4 .btn {
+    margin: 10px 0px 0px 300px;
+    height: 200px;
+    width: 400px;        
+    box-shadow: 0px 0px 21px 6px rgb(163 152 152 / 50%);
+    background: #000;
+    border: #333;
+    font-size: 20px;
+    font-weight: 400;
+   
+ } 
+ .box4 .btn:hover { 
+    color: #FFFFFF;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    border-color: #FFCC00;
+ }
+ .box4 p {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+ }
+
+
+ /* Box-5 Design */
+
+ .four {
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.four .row {
+display: flex;
+flex-direction: row;
+
+}
+
+.box5 img {
+margin-left: 100px;
+margin-top: 50px;
+vertical-align: middle;
+margin-right: 150px;
+
+}
+.box6 {
+width:700px ;
+margin-right: 100px;
+/* float: right; */
+}
+
+.box6 h2 {
+font-size: 3.5em;
+background-image: linear-gradient(120deg, #333 0%, #fc0 100%);
+background-repeat: no-repeat;
+background-size: 100% 0.2em;
+background-position: 0 80%;
+transition: background-size 0.25s ease-in;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-weight: 800;
+}
+
+.box6 h3 {
+    color: #FFFFFF;
+    font-family: "josefin Sans", Sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+ }
+
+.box6 h5 {
+color: #FFFFFF;
+font-family: "josefin Sans", Sans-serif;
+font-size: 39px;
+font-weight: 600;
+}
+.box6 h2:hover {
+background-size: 100% 7%;
+}
+.box6 .btn {
+margin: 10px 0px 0px 300px;
+height: 200px;
+width: 400px;        
+box-shadow: 0px 0px 21px 6px rgb(163 152 152 / 50%);
+background: #000;
+border: #333;
+font-size: 20px;
+font-weight: 400;
+
+} 
+.box6 .btn:hover { 
+color: #FFFFFF;
+border-style: solid;
+border-width: 4px 4px 4px 4px;
+border-color: #FFCC00;
+}
+.box6 p {
+margin: 0 0 1em 0;
+font-family: "Josefin Sans", Sans-serif;
+color: #FFFFFF;
+line-height: 2em;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-size: 24px;
+font-weight: 400;
+}
+/* ********************************************************************** */
+
+ /* Section - 5 Design */
+
+ .five {
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.five .row {
+display: flex;
+flex-direction: row;
+
+}
+
+.box7 img {
+margin-left: 100px;
+margin-top: 50px;
+vertical-align: middle;
+margin-right: 150px;
+
+}
+.box8 {
+width:700px ;
+margin-right: 100px;
+/* float: right; */
+}
+
+.box8 h2 {
+font-size: 3.5em;
+background-image: linear-gradient(120deg, #333 0%, #fc0 100%);
+background-repeat: no-repeat;
+background-size: 100% 0.2em;
+background-position: 0 80%;
+transition: background-size 0.25s ease-in;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-weight: 800;
+}
+
+.box8 h3 {
+    color: #FFFFFF;
+    font-family: "josefin Sans", Sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+ }
+
+.box8 h5 {
+color: #FFFFFF;
+font-family: "josefin Sans", Sans-serif;
+font-size: 39px;
+font-weight: 600;
+}
+.box8 h2:hover {
+background-size: 100% 7%;
+}
+.box8 .btn {
+margin: 10px 0px 0px 300px;
+height: 200px;
+width: 400px;        
+box-shadow: 0px 0px 21px 6px rgb(163 152 152 / 50%);
+background: #000;
+border: #333;
+font-size: 20px;
+font-weight: 400;
+
+} 
+.box8 .btn:hover { 
+color: #FFFFFF;
+border-style: solid;
+border-width: 4px 4px 4px 4px;
+border-color: #FFCC00;
+}
+.box8 p {
+margin: 0 0 1em 0;
+font-family: "Josefin Sans", Sans-serif;
+color: #FFFFFF;
+line-height: 2em;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-size: 24px;
+font-weight: 400;
+}
+/* ********************************************************* */
+/* Seciton 6 Design */
+
+.six {
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.six .row {
+display: flex;
+flex-direction: row;
+
+}
+
+.box9 img {
+margin-left: 100px;
+margin-top: 50px;
+vertical-align: middle;
+margin-right: 150px;
+
+}
+.box10 {
+width:700px ;
+margin-right: 100px;
+/* float: right; */
+}
+
+.box10 h2 {
+font-size: 3.5em;
+background-image: linear-gradient(120deg, #333 0%, #fc0 100%);
+background-repeat: no-repeat;
+background-size: 100% 0.2em;
+background-position: 0 80%;
+transition: background-size 0.25s ease-in;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-weight: 800;
+}
+
+.box10 h3 {
+    color: #FFFFFF;
+    font-family: "josefin Sans", Sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+ }
+
+.box10 h5 {
+color: #FFFFFF;
+font-family: "josefin Sans", Sans-serif;
+font-size: 39px;
+font-weight: 600;
+}
+.box10 h2:hover {
+background-size: 100% 7%;
+}
+.box10 .btn {
+margin: 10px 0px 0px 300px;
+height: 200px;
+width: 400px;        
+box-shadow: 0px 0px 21px 6px rgb(163 152 152 / 50%);
+background: #000;
+border: #333;
+font-size: 20px;
+font-weight: 400;
+
+} 
+.box10 .btn:hover { 
+color: #FFFFFF;
+border-style: solid;
+border-width: 4px 4px 4px 4px;
+border-color: #FFCC00;
+}
+.box10 p {
+margin: 0 0 1em 0;
+font-family: "Josefin Sans", Sans-serif;
+color: #FFFFFF;
+line-height: 2em;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-size: 24px;
+font-weight: 400;
+}
+
+/* ********************************************************************** */
+
+ /* Section - 5 Design */
+
+ .seven {
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.seven .row {
+display: flex;
+flex-direction: row;
+
+}
+
+.box11 img {
+margin-left: 100px;
+margin-top: 50px;
+vertical-align: middle;
+margin-right: 150px;
+
+}
+.box12 {
+width:700px ;
+margin-right: 100px;
+/* float: right; */
+}
+
+.box12 h2 {
+font-size: 3.5em;
+background-image: linear-gradient(120deg, #333 0%, #fc0 100%);
+background-repeat: no-repeat;
+background-size: 100% 0.2em;
+background-position: 0 80%;
+transition: background-size 0.25s ease-in;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-weight: 800;
+}
+
+.box12 h3 {
+    color: #FFFFFF;
+    font-family: "josefin Sans", Sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+ }
+
+.box12 h5 {
+color: #FFFFFF;
+font-family: "josefin Sans", Sans-serif;
+font-size: 39px;
+font-weight: 600;
+}
+.box12 h2:hover {
+background-size: 100% 7%;
+}
+.box12 .btn {
+margin: 10px 0px 0px 300px;
+height: 200px;
+width: 400px;        
+box-shadow: 0px 0px 21px 6px rgb(163 152 152 / 50%);
+background: #000;
+border: #333;
+font-size: 20px;
+font-weight: 400;
+
+} 
+.box12 .btn:hover { 
+color: #FFFFFF;
+border-style: solid;
+border-width: 4px 4px 4px 4px;
+border-color: #FFCC00;
+}
+.box12 p {
+margin: 0 0 1em 0;
+font-family: "Josefin Sans", Sans-serif;
+color: #FFFFFF;
+line-height: 2em;
+color: #FFFFFF;
+font-family: "Josefin Sans", Sans-serif;
+font-size: 24px;
+font-weight: 400;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 767px) {
+
+    .navbar-toggler {
+       border-color: #FFFFFF;
+    }
+   
+   .navbar-toggler-icon {
+       filter: brightness(0) invert(1);
+   }
+ 
+   .navbar-nav {
+    background: #FFFFFF;
+   }  header .nav-link {
+    color: #000000;
+    margin: 5px 10px 0px 10px;
+   }
+ 
+   .navlink:hover {
+    color: #000000;
+   }
+ 
+   .first h1 {
+       font-size: 28px;
+       margin: 30px 0 0 0;
+    }
+
+
+}
